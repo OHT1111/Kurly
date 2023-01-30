@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>마켓컬리 메인페이지</title>
+
+    <!-- 링크 -->
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Fugaz+One&family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
+
+    <style>
+
+    </style>
+
+</head>
+
+<!-- 바디 시작 -->
+<body>
+
+    
+    <header class="header">
+        
+        <div class="gnb">
+            <!-- gnb인라인블럭
+            li 플롯 라이트 주니까 순서반대가 되버려
+            li 글자 위치 반대로 변경 -->
+            <li>고객센터</li>
+            <li>회원가입</li>
+            <li>로그인</li>
+        </div>
+        <!-- gnb end! -->
+
+        <div class="hd_box">
+            <!-- 우측 상단 로고랑 붙어 있는 부분에 이벤트창 만들기 -->
+            <div class="main_eve_top">
+                <img src="./main_images/hd_top_eve.png" alt="헤더_이벤트">
+                <p>오늘만 허쉬쿠키 100원!</p>    
+            </div>
+            <div class="logo"><img src="./main_images/main_logo.svg" alt=""></div>
+        </div>
+
+
+    </header>
+    <!-- header end! -->
+    
+    <div class="lnb_bg">
+        <ul class="lnb_box">
+                <li  class="ctgry"><i class="fa-solid fa-bars"></i>카테고리
+                <ul class="ctgry_box">
+                    <li><a href="sub_page.html">간편식</a> </li>
+                    <li><a href="sub_page.html">채소</a> </li>
+                    <li><a href="sub_page.html">과일·견과 쌀</a> </li>
+                    <li><a href="sub_page.html">수산·해산·건어물</a> </li>
+                    <li><a href="sub_page.html">정육·계란</a> </li>
+                    <li><a href="sub_page.html">국·반찬· 메인요리</a> </li>
+                    <li><a href="sub_page.html">생수·음료·우유·커피</a> </li>
+                    <li><a href="sub_page.html">베이커리·치즈·델리</a> </li>
+                    <li><a href="sub_page.html">건강식품</a> </li>
+           
+                </ul></li>
+
+                <li>신상품</li>
+                <li>베스트</li>
+                <li>알뜰상품</li>
+                <li>특가/혜택</li>
+        </ul>
+    </div>
+    
+    <!-- 윙배너 -->
+    <div class="wing_banner"></div>
+
+    <div class="visual_main">
+    </div>
+    <!-- visual_main end! -->
+
+    <!-- 검색창 만들기 -->
+    <div class="search_box">
+        <input class="search" type="text" 
+        value="마켓 컬리의 인기 상품 샐러드를 검색해보세요!">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="category_bg">
+        <div class="ctgry_box">
+
+            <!-- 카테고리 7개 메타포 -->
+            <div class="ctgry_main_box">
+                <li><a href="sub_page.html"><img src="./main_images/ctgry_01.png" alt="카테고리1_채소"></a><br><p>채소</p></li>
+                <li><a href="sub_page.html"><img src="./main_images/ctgry_02.png" alt="카테고리2_과일"></a><br><p>과일</p></li>
+                <li><a href="sub_page.html"><img src="./main_images/ctgry_03.png" alt="카테고리3_해산"></a><br><p>해산물</p></li>
+                <li><a href="sub_page.html"><img src="./main_images/ctgry_04.png" alt="카테고리4_정육"></a><br><p>정육</p></li>
+                <li><a href="sub_page.html"><img src="./main_images/ctgry_05.png" alt="카테고리5_반찬"></a><br><p>반찬</p></li>
+                <li><a href="sub_page.html"><img src="./main_images/ctgry_06.png" alt="카테고리6_건강"></a><br><p>건강식품</p></li>
+                <li><a href="sub_page.html"><img src="./main_images/ctgry_07.png" alt="카테고리7_샐러드"></a><br><p>샐러드</p></li>
+            </div>
+            <!-- 카테고리 메타포 완성! -->
+        </div>
+        <!-- ctgry_box end! -->
+    </div>
+    <!-- cartegory_bg end! -->
+    
+    <!-- 랩싸기 -->
+    <div class="wrap">
+
+                <section class="item_box">
+
+                    <div class="item_ctgry">
+                        <p class="main_name">채소</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <p class="sub_name">유기농</p>
+                        <ul>
+                            <li>인기순</li>
+                            <li>가격순</li>
+                            <li>할인순</li>
+                        </ul>
+                    </div>
+                    <!-- item_ctgry end! -->
+                        
+                        <div class="item_list123 list">
+                            <a href="detail_page.html"><li><img class="item_img" src="./main_images/main_item01.jpg" alt="메인아이템1">
+                            <br>
+                            <p class="beasong">샛별배송</p>
+                            <p class="bu_name">귀여운모양, 야무진 쓰임새 (1팩/160g)</p>
+                            <p class="jjin_name">친환경 노루궁뎅이 버섯 160g</p>
+                            <p class="price"><small>9% <del>19,900 원</del></small> > 3,990원</p>
+                            <img class="cart" src="./main_images/cart.png" alt="카트">
+                        </li></a>
+                        
+                        <li><a href="detail_page.html"><img class="item_img" src="./main_images/main_item02.jpg" alt="메인아이템2">
+                            <br>
+                            <p class="beasong">샛별배송</p>
+                            <p class="bu_name">간단히 데워 즐기는 달콤 옥수수</p>
+                            <p class="jjin_name">[달콘] 초당옥수수 (레토르트) 1입</p>
+                            <p class="price"><small></small>3,690 원</p>
+                            <img class="cart" src="./main_images/cart.png" alt="카트">
+                        </a></li>
+                            
+                            <a href="detail_page.html"><li><img class="item_img" src="./main_images/main_item03.jpg" alt="메인아이템3">
+                                <br>
+                                <p class="beasong">샛별배송</p>
+                                <p class="bu_name">지하 120m 암반수로 자라 깨끗한 유기농 미나리</p>
+                                <p class="jjin_name">유기농 미나리 200g</p>
+                                <p class="price"><small></small>4,290 원</p>
+                                <img class="cart" src="./main_images/cart.png" alt="카트">
+                            </li></a>
+                        </div>
+                        <!-- item_list123 end! -->
+                        
+                        <div class="item_list456 list">
+                            <a href="detail_page.html"><li><img class="item_img" src="./main_images/main_item04.jpg" alt="메인아이템4">
+                                <br>
+                                <p class="beasong">샛별배송</p>
+                                <p class="bu_name">포실포실 달콤한 꿀고구마를 무농약으로 즐기세요</p>
+                                <p class="jjin_name">영암 친환경 꿀고구마 2kg</p>
+                                <p class="price"><small></small>13,900 원</p>
+                                <img class="cart" src="./main_images/cart.png" alt="카트">
+                            </li></a>
+                            <li><a href="detail_page.html"><img class="item_img" src="./main_images/main_item05.jpg" alt="메인아이템5">
+                                <br>
+                                <p class="beasong">샛별배송</p>
+                                <p class="bu_name">어떤 음식을 해도 잘 어울리는 무농약감자</p>
+                                <p class="jjin_name">친환경 감자 600g</p>
+                                <p class="price"><small></small>3,690원</p>
+                                <img class="cart" src="./main_images/cart.png" alt="카트">
+                            </a></li>
+                            <a href="detail_page.html"><li><img class="item_img" src="./main_images/main_item06.jpg" alt="메인아이템6">
+                                <br>
+                                <p class="beasong">샛별배송</p>
+                                <p class="bu_name">가장 맛있는 잎몸 부분만 따로 손질한 대파</p>
+                                <p class="jjin_name">친환경 손질한 잎몸 대파 200g</p>
+                                <p class="price"><small><del>9,900 원</del></small> > 3,490 원</p>
+                                <img class="cart" src="./main_images/cart.png" alt="카트">
+                            </li></a>
+                        </div>
+                        <!-- item_list456 end!-->
+                </section>
+                <!-- item_box end! -->
+
+                <div class="event01 main_eve">
+                    <img src="./main_images/main_eve01.png" alt="">
+                </div>
+                <!-- event01 end! -->
+
+            <h3 class="kry_menu_name">kurly's Menu</h3>    
+
+            <!-- 컬리 라이브 -->
+            <div class="kry_live_box kry_menu_box">
+                
+                <div class="kry_live_name kry_name">
+                    <div class="name_icon"><i class="fa-solid fa-circle-play"></i></div>
+                    <div class="name_name">
+                    <p>생방송으로 즐기는 쇼핑 라이프</p>
+                    <p>컬리의 LIVE 쇼핑</p>
+                    </div>
+                </div>
+
+                <div class="kry_live kry_contents">
+                    <iframe width="626" height="555" src="https://www.youtube.com/embed/zHZEdVK-MxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+                <div class="kry_live_info kry_info">
+                
+                <div class="live_img_box">
+                    <!-- 인풋 라디오 생성  -->
+               <input type="radio" id="rad1" name="rad1_img" checked>
+               <input type="radio" id="rad2" name="rad1_img">
+               <input type="radio" id="rad3" name="rad1_img">
+               
+               <!-- 라벨 -->
+               
+               <div class="live_label">
+                   <label for="rad1" class="lab01">●</label>
+                   <label for="rad2" class="lab02">●</label>
+                   <label for="rad3" class="lab03">●</label>          
+               </div>
+               <!-- 시트이미지 파일 -->
+               <div class="live_img">
+                   <div class="file01"><img src="./main_images/live_img01.png" alt="돈마호크1"></div>
+                   <div class="file02"><img src="./main_images/live_img02.png" alt="돈마호크2"></div>
+                   <div class="file03"><img src="./main_images/live_img03.png" alt="돈마호크3"></div>
+               </div>
+                </div>
+                <!--  -->
+                <div class="live_gume_box01">
+                    <p class="beasong">샛별배송</p><br><br>
+                    <p class="bu_name">스테이크 시즈닝 포함 (100g 당 : 3,480원)</p>
+                    <p class="jjin_name">[맛있는테이블] 한돈 토마호크 스테이크 250g</p>
+                    <p class="price"><small></small>9,500 원</p>
+                </div>
+                <!--  -->
+                <div class="live_gume_box02">
+                    <div class="gume_btn">
+                        <p class="gume">구매하기</p>
+                        <p class="jangba">장바구니</p>
+                    </div>
+                </div>
+                
+                
+                
+                </div>
+            </div>
+
+
+            <!-- 컬리 초이스 -->
+            <div class="kry_choice_box kry_menu_box">
+                <div class="kry_choice_name kry_name">
+                    <div class="name_icon"><img src="./main_images/kry_edit_logo.png" alt=""></div>
+                    <div class="name_name">
+                    <p>에디터가 선정하고 추천하는</p>
+                    <p>오늘의 컬리</p>
+                    </div>
+                </div>
+
+                <div class="kry_choice kry_contents">
+                     <!-- 인풋 라디오 생성  -->
+                <input type="radio" id="rad04" name="rad_img" checked>
+                <input type="radio" id="rad05" name="rad_img">
+                <input type="radio" id="rad06" name="rad_img">
+        
+                <!-- 라벨 -->
+                <div class="choice_label">
+                    <label for="rad04" class="lab04">●</label>
+                    <label for="rad05" class="lab05">●</label>
+                    <label for="rad06" class="lab06">●</label>          
+                </div>
+        
+                <!-- 시트이미지 파일 -->
+                <div class="choice_img">
+                    <div class="file04"><img src="./main_images/kry_choice_img01.png" alt="에디터추천1"></div>
+                    <div class="file05"><img src="./main_images/kry_choice_img02.png" alt="에디터추천2"></div>
+                    <div class="file06"><img src="./main_images/kry_choice_img03.png" alt="에디터추천3"></div>
+                </div>
+                </div>
+                <div class="kry_choice_info kry_info">
+                    <div class="editer_box">
+                        <img src="./main_images/face.png" alt="얼굴">
+                        <div class="edit_txt">
+                            <p>컬리 에디터 김헤롱이 추천하는</p>
+                            <p>오늘의 컬리는?</p>
+                            <p>"반얀트리 인센스 스틱"</p>
+                        </div>
+                    </div>
+                    <div class="edit_memo_box">
+                        <p>오늘 제가 추천할 제품은 <br>
+                            반안트리 인센스 스틱입니다. <br>
+                            심신이 안정되고 하루의 스트레스를 날릴 수 있는<br>
+                            반얀트리 인센스 스틱과 향기로운 하루를 즐기는것은 어떠실까요?</p>
+                    </div>
+                    <!--  -->
+                    <div class="edit_gume_box">
+                        <div class="gume_info">
+                            <p class="beasong">샛별배송</p>
+                            <p class="bu_name">귀여운모양, 야무진 쓰임새 (1팩/160g)</p>
+                            <p class="jjin_name">친환경 노루궁뎅이 버섯 160g</p>
+                            <p class="price"><small>9% <del>19,900 원</del></small> > 3,990원</p>
+                        </div>
+                        <div class="gume_btn">
+                            <p class="gume">구매하기</p>
+                            <p class="jangba">장바구니</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!--  -->
+
+            <div class="event02 main_eve">
+                <img src="./main_images/main_eve02.png" alt="">
+            </div>
+
+   
+
+    </div>
+    <!-- wrap end! -->
+    
+    <footer class="footer">
+
+
+        <div class="ft_box">            
+            
+            <!-- 푸터 박스1번 -->
+            <div class="ft_box1">
+                <div class="box1">
+                    <p>행복고객센터</p>
+                    <p><h1>1566-1111</h1></p>
+                </div>
+                <div class="box2">
+                    <a href=""><img src="./main_images/ft02_cs_icon01.png" alt=""><p>카카오톡문의</p></a>
+                    <a href=""><img src="./main_images/ft02_cs_icon02.png" alt=""><p>1:1상담문의</p></a>
+                    <a href=""><img src="./main_images/ft02_cs_icon03.png" alt=""><p>이메일문의</p></a>
+
+                </div>
+            </div> 
+
+            <!-- 푸터 박스2번 -->
+            <div class="ft_box2">
+                <ul>
+                    <li>컬리소개 |</li>
+                    <li>컬리소개영상 |</li>
+                    <li>인재채용 |</li>
+                    <li> 이용약관 |</li>
+                    <li> 개인정보처리방침 | </li>
+                    <li> 이용안내</li>
+                </ul>
+                <br>
+                <p>
+                    법인명(상호) : 주식회사 컬리 사업자등록번호 : 261-81-23567 사업자정보확인<br>
+                    통신판매업 : 제 2018-서울강남-01646 호 | 개인정보보호책임자 : 이원준<br>
+                    주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) | 대표이사 : 김슬아<br>
+                    입점문의 : 입점문의하기 | 제휴문의 : business@kurlycorp.combr
+                    <br>
+                    채용문의 : recruit@kurlycorp.com <br>
+                    팩스: 070-7500-609
+                </p>
+            </div> 
+            <!-- ft_box02 -->
+
+            <!-- 탑버튼 포지션-->
+            <a class="top_btn" href="#">
+            <i class="fa-solid fa-angle-up"></i>
+            top</a>
+            <!-- 탑버튼 끝 -->
+
+
+        </div>
+
+        <div class="ft_box_btm">
+            <div class="ft_box_btm1 ft_box_btms">
+                <img class="logo" src="./main_images/ft_btm_img01.jpg" alt="푸터이미지1">
+                <p>[인증범위] 마켓컬리 쇼핑몰 서비스 개발·운영 <br>
+                    (심사받지 않은 물리적 인프라 제외)
+                    [유효기간] 2022.01.19~2025.01.18</p>
+            </div>
+            <div class="ft_box_btm2 ft_box_btms">
+                <img class="logo" src="./main_images/ft_btm_img02.jpg" alt="푸터이미지1">
+                <p>개인정보보호 우수 웹사이트. <br>
+                    개인정보처리시스템 인증 (PRIVACY PLUS)</p>
+            </div>
+
+            <div class="ft_sns_box">
+                <img src="./main_images/ft_insta.png" alt="푸터_인스타">
+                <img src="./main_images/ft_facebook.png" alt="푸터_페이스북">
+                <img src="./main_images/ft_blog.png" alt="푸터_블로그">
+                <img src="./main_images/ft_naver.png" alt="푸터_네이버">
+                <img src="./main_images/ft_youtube.png" alt="푸터_유튜브">
+            </div>
+
+        </div>
+
+        <div class="ft_tmi_box">
+            <div class="ft_tmi">
+            </p>
+            마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다. <br>
+            마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 
+            의무와 책임을 부담하지 않습니다. <br>
+            © KURLY CORP. ALL RIGHTS RESERVED
+            <p>
+                    
+            </div>
+        </div>
+
+
+
+    </footer>
+    <!-- footer end! -->
+
+</body>
+</html>

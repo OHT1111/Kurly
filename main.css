@@ -1,0 +1,828 @@
+*{margin: 0 auto; padding: 0;
+  font-weight:bold;
+  font-family: 'IBM Plex Sans KR', sans-serif;}
+a{color: black; text-decoration: none;}
+li{list-style: none;}
+
+body{
+    position: relative;
+}
+/* 헤더 */
+.header{
+    width: 1264px;
+    margin: 0 auto;
+}
+
+.header .gnb{
+    width: 100%; height: 30px;
+    display: inline-block;
+}
+.header .gnb li{
+    float: right;
+}
+
+.header .hd_box{
+    width: 100%; height: 210px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hd_box div{
+    float: left;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.hd_box .main_eve_top{
+    width: 200px; height: 120px;
+    padding-left: 50px;
+    margin-top: 58px;
+}
+.hd_box .main_eve_top img{
+    width: 195px; height: 110px;   
+}
+.main_eve_top p{
+    margin-top: -10px;
+    font-size: 13px;
+}
+.hd_box .logo{
+    width: 550px; height: 155px;
+    margin: 65px 133px;
+}
+.hd_box .logo img{
+    width: 500px; height: 105px;
+}
+/* 헤더 끝 */
+
+.lnb_bg{
+    width: 100%; height: 60px;
+    background-color: #8740A0;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.lnb_bg .lnb_box{
+    width: 1264px; height: 60px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.lnb_box li{
+    width: 240px; height: 20px;
+    border-left: #E1D0E8 1px solid;
+    float: left;
+    margin: 18px 0;
+    line-height: 20px;
+}
+.lnb_box li:first-child{
+    border-left: none;
+    margin-right: 30px;
+}
+.lnb_box i{
+    float: left;
+    font-size: 25px;
+    margin-left: 60px;
+    line-height: 20px;
+}
+.lnb_box li:hover{
+    font-size: 20px;
+}
+
+/* 카테고리 */
+/* 위에 사이사이 간격에 일자 줄무늬 넣고싶어서
+하이트 20으로 했다가 카테고리부분 잘안눌러져서
+다시 조정함. */
+.lnb_box .ctgry{
+    display: block;
+    width: 240px;height: 60px;
+}
+.lnb_box .ctgry ul{
+   display: none;
+}
+.lnb_box .ctgry:hover ul{
+    display: block;
+    width: 300px; height: 750px;
+    background-color: #fcdcff;
+    border: 1px solid #707070;
+    border-top: none;
+    padding-top: 20px;
+    text-align: left;
+
+    position: absolute;
+    top: 60px;
+    z-index: 999999999;
+}
+
+.lnb_box .catgry ul>li:first-child{
+    padding-top: 20px;
+}
+.lnb_box .ctgry ul>li{
+    width: 200px; height: 40px;
+    margin-left: 60px;
+    color: #707070;
+}
+
+.lnb_box .ctgry ul li{
+    display: none;
+}
+
+.lnb_box .ctgry:hover ul li{
+    display: block;
+    font-size: 24px;
+}
+/*  */
+
+
+.visual_main{
+    width: 1629px; height: 379px;
+    border-radius: 25px;
+    background-image: url(./main_images/main_visual01.png);
+    animation-name: visual_banner; /*이름*/
+    animation-duration: 10s; /*몇초??*/
+    animation-iteration-count: infinite;
+    margin: 45px auto 60px auto;
+}
+
+@keyframes visual_banner{
+    0%{background-image: url(./main_images/main_visual01.png);}
+    16.5%{background-image: url(./main_images/main_visual02.png);}
+    33%{background-image: url(./main_images/main_visual02.png);}
+    49.5%{background-image: url(./main_images/main_visual03.png);}
+    66%{background-image: url(./main_images/main_visual03.png);}
+    82.5%{background-image: url(./main_images/main_visual01.png);}
+    100%{background-image: url(./main_images/main_visual01.png);}
+}
+/* visual_main end! */
+
+.search_box{
+    text-align: center;
+    width: 100%; height: 70px;
+    background-color: #691088;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.search_box .search{
+    border: none;
+    width: 520px; height: 45px;
+    text-align: center;
+    border-radius: 22.5px;
+    margin: 12px 0;
+    color: #707070;
+    line-height: 45px;
+}
+.search_box i{
+   margin-left: -45px;
+   font-size: 20px;
+   color: #65137D;
+}
+/* 인풋태그 눌렀을때 검은선뜨는거
+없애기 - 구글링 참조
+선생님이 가르쳐 주셨는데 까묵 */
+.search_box .search:focus{
+    outline: none;
+}
+/* 원래 카테고리부분도 스티키 걸고싶었는데
+차지하는 공간이 너무 커서 빼버림 */
+
+.category_bg{
+    width: 100%; height: 145px;
+    background-color: #691088;
+    text-align: center;
+    margin: 0 auto;
+}
+.ctgry_box{
+    width: 1264px; height: 200px;
+    text-align: center;
+}
+
+
+.ctgry_box .ctgry_main_box{
+    width: 100%; height: 130px;
+    margin: 0 135px;
+}
+.ctgry_main_box li{
+    margin: 0 25px;
+    float: left;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 300;
+}
+.ctgry_box .ctgry_main_box img{
+    width: 88px; height: 88px;
+    /* 호버시 덜컬거리는게 보기 싫어서
+    보더 입힘 */
+    border: 3px solid #691088;
+    /* transition: all 0.2s linear; */
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+.ctgry_main_box li:hover img{
+    transform: scale(1);
+    border-radius: 50px;
+    border: 3px solid rgb(208, 203, 212);
+    padding: 0; margin: 0;
+    cursor: pointer;
+}
+.ctgry_main_box li:hover p{
+    font-size: 15px;
+}
+/* 검색창 베스트 카테고리 부분 끝 */
+
+/* 랩싸기 */
+.wrap{
+    width: 1264px;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+    .item_box{
+        margin-top: 30px;
+        /* border: 1px solid black; */
+        width: 100%; height: 1235px;
+        box-sizing: border-box;
+    }
+    .item_box .item_ctgry{
+        border-bottom: 3.5px solid #8740A0;
+        width: 100%; height: 125px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+}
+
+.item_ctgry p{
+    color: #878788;
+}
+.item_ctgry p:first-child{
+    font-size: 30px;
+    color: #715B8B;
+}
+.item_ctgry i{
+    color: #B6ABBF;
+    margin-bottom: 5px;
+}
+.item_ctgry ul{
+    float: left;
+}
+.item_ctgry ul li{
+    padding: 0 10px;
+    border-left: #5f3673 2px solid;
+    color: #656565;
+    line-height: 13px;
+    float: left;
+    cursor: pointer;
+}
+.item_ctgry ul li:first-child{
+    border-left: none;
+}
+
+.item_ctgry ul li:hover{
+    font-size: 16.5px;
+}
+.item_box .list{
+    width: 1265px; height: 535px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.item_box .list li{
+    /* li에 보더박스 치니까
+    화면 줄여도 안깨짐 */
+    box-sizing: border-box;
+    border: 0.5px solid rgb(179, 179, 179);
+    float: left;
+    text-align: left;
+    width: 412px; height: 535px;
+}
+.item_box .list li:nth-child(2){
+    margin: 0 13px;
+}
+
+.item_box .list li .item_img{
+    width: 410px; height: 410px;
+}
+
+.item_box .list li p{
+    margin-left: 10px;
+}
+
+.item_box .list li .cart{
+    box-sizing: border-box;
+    float: right;
+    margin-top: -40px;
+    margin-right: 15px;
+}
+/* 밑에 다른곳에서도 공통으로 사용할 것임.  */
+.beasong{
+    display: inline-block;
+    margin: 1.5px auto;
+    border: 2px solid #8740A0;
+    color: #8740A0;
+    border-radius: 5px;
+    padding: 2px 1px;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+
+.list p:nth-child(4),
+.list p:nth-child(5){
+    color: #707070;
+}
+.bu_name{
+    font-size: 14px;
+}
+.jjin_name{
+    font-size: 21px;
+}
+.price{
+    font-size: 20px;
+}
+/*  ---------------------- */
+
+.list li:hover{
+    transform: scale(1.01);
+}
+/* 이벤트 광고창 */
+.main_eve{
+    margin: 90px 0;
+}
+.main_eve img{
+    /*디스플레이 블럭을 잡아주어야
+    반응형처럼 지맘대로 안움직인다.*/
+    display: block;
+}
+/*  */
+
+.kry_menu_name{
+    margin-top: 120px;
+    width: 100%; height: 80px;
+    line-height: 80px;
+    font-family: 'Fugaz One', cursive;
+    font-weight: 500;
+    font-size: 33px;
+    color: #715B8B;
+}
+/* 구글링 참조 글자 옆에 선그리기 */
+/* 글자 왼쪽부분 */
+.kry_menu_name::before {
+    /* 인라인블럭 처리 */
+    display: inline-block; margin: 0 20px 0 0; height: 2px; 
+    content: " "; 
+    text-shadow: none; background-color: #715B8B; width: 40%; 
+}
+.kry_menu_name::after {
+    display: inline-block; margin: 0 0 0 20px; height: 2px; 
+    content: " "; 
+    text-shadow: none; background-color: #715B8B; width: 40%; 
+}
+
+.kry_menu_box{
+    width: 100%; height: 655px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.kry_menu_box .kry_name{
+    width: 100%; height: 100px;
+    border-radius: 20px 20px 0 0;
+    background-color: #8740a0;
+    text-align: left;
+    color: white;
+}
+
+/* 아이콘 정렬이 안되서 div따로 만듦 */
+.kry_name .name_icon{
+    margin-left: 20px;
+    width: 90px; height: 100px;
+    float: left;
+    font-size: 70px;
+    background-color: #563e6100;
+}
+.kry_name .name_name{
+    float: left;
+    width: 500px;
+    margin-top: 15px;
+}
+
+.kry_name .name_icon img{
+    width: 75px; height: 90px;
+    margin-top: 6px;
+}
+.kry_name .name_name p:last-child{
+    margin-left: -4px;
+    font-size: 33px;
+}
+
+
+.kry_menu_box .kry_contents{
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+    width: 626px; height: 555px;
+    border: 1px solid #707070;
+    border-top: none;
+    border-radius: 0 0 0 20px;
+}
+.kry_menu_box .kry_info{
+    /* 보더박스를 치니까 화면 작아져도
+    비율 안깨짐 */
+    box-sizing: border-box;
+    float: right;
+    width: 626px; height: 555px;
+    border: 1px solid #707070;
+    border-top: none;
+    border-radius: 0 0 20px 0;
+    
+
+}
+
+/*  라이브 */
+/* 라디오 체크박스 없애기*/
+#rad1, #rad2, #rad3{display: none;}
+
+/*-- 라디오 체크 작동코드 --*/
+/*라디오 1번(file01) 체크시 작동코드*/
+#rad1:checked ~ .live_img .file02,
+#rad1:checked ~ .live_img .file03{display: none;}
+#rad1:checked ~ .live_img .file01{display: block;}
+
+
+/*라디오 2번(file02) 체크시 작동코드*/
+#rad2:checked ~ .live_img .file01,
+#rad2:checked ~ .live_img .file03{display: none;}
+#rad2:checked ~ .live_img .file02{display: block;}
+
+
+/*라디오 3번(file03) 체크시 작동코드*/
+#rad3:checked ~ .live_img .file01,
+#rad3:checked ~ .live_img .file02{display: none;}
+#rad3:checked ~ .live_img .file03{display: block;}
+
+#rad1:checked ~ .live_label .lab01,
+#rad2:checked ~ .live_label .lab02,
+#rad3:checked ~ .live_label .lab03{color: #932e9f;}
+
+
+
+/* 라이브------------------------- */
+.live_img_box{
+    width: 100%; height: 230px;
+}
+
+.kry_live_info{
+    position: relative; /*포지션 부모 설정*/
+    margin: 0 auto;
+}
+
+/*02. 라벨 위치 정하기  */
+.kry_live_info .live_label{
+    color: rgb(255, 255, 255);
+    position: absolute; /*포지션 부모 하위 자식*/
+    top: 180px; /*포지션 위치 설정*/ 
+    left: 300px;
+}
+
+/* 시트파일 이미지 크기 설정 */
+.kry_live_info .live_img div img{
+    margin-top: 20px;
+    width: 567px; height: 190px;
+}
+
+
+.live_gume_box01{
+    width: 545px; height: 170px;
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 10px 10px;
+    border: 4px solid rgb(116, 112, 112);
+    border-radius: 20px;
+    text-align: left;
+}
+.live_gume_box01 .beasong{
+    float: left;
+}
+
+/*  */
+.live_gume_box02{
+    float: right;
+    width: 560px; height: 90px;
+  
+}
+.live_gume_box02 .gume_btn{
+    float: right;
+    width: 250px; height: 80px;
+    margin-top: 20px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+.gume_btn p{
+    float: left;
+    display: block;
+    width: 80px; height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    border-radius: 9px;
+    padding: 0 2px;
+    background-color: #11BCB7;
+    border: 3px solid #1195B8;
+    color: white;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+/* 오늘의 컬리 */
+.kry_choice_info .editer_box{
+    width: 625px; height: 190px;
+    margin-top: 25px;
+}
+.editer_box img{
+    float: left;
+    margin-left: 20px;
+}
+.editer_box .edit_txt{
+    float: right;
+    width: 380px; height: 150px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.editer_box .edit_txt p:first-child{
+    font-size: 20px;
+    color: #707070;
+}
+.edit_txt p:nth-child(2){
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.edit_txt p:last-child{
+    font-size: 40px;
+}
+/*  */
+.edit_memo_box {
+    width: 570px; height: 135px;
+    border: 3px solid #FFE29F;
+    font-size: 17px;
+    line-height: 30px;
+    background-color: #FFE29F;
+    padding: 0;
+    border-radius: 0 20px 20px 20px;
+}
+.edit_memo_box p{
+    margin-top: 5px;
+}
+/*  */
+
+.edit_gume_box{
+    width: 575px; height: 135px;
+    border: 4px solid #707070;
+    border-radius: 20px;
+    margin-top: 25px;
+    text-align: left;
+}
+.edit_gume_box .gume_info{
+    float: left;
+    width: 320px; height: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/* */
+.edit_gume_box .gume_btn{
+    margin-top: 70px;
+    margin-right: 25px;
+}
+
+
+
+/* 초이스 */
+/* 라디오 체크박스 없애기*/
+#rad04, #rad05, #rad06{display: none;}
+
+/*-- 라디오 체크 작동코드 --*/
+/*라디오 1번(file01) 체크시 작동코드*/
+#rad04:checked ~ .choice_img .file05,
+#rad04:checked ~ .choice_img .file06{display: none;}
+#rad04:checked ~ .choice_img .file04{display: block;}
+
+
+/*라디오 2번(file02) 체크시 작동코드*/
+#rad05:checked ~ .choice_img .file04,
+#rad05:checked ~ .choice_img .file06{display: none;}
+#rad05:checked ~ .choice_img .file05{display: block;}
+
+
+/*라디오 3번(file03) 체크시 작동코드*/
+#rad06:checked ~ .choice_img .file04,
+#rad06:checked ~ .choice_img .file05{display: none;}
+#rad06:checked ~ .choice_img .file06{display: block;}
+
+#rad04:checked ~ .choice_label .lab04,
+#rad05:checked ~ .choice_label .lab05,
+#rad06:checked ~ .choice_label .lab06{color: #783780;}
+
+
+
+.kry_choice{
+    position: relative; /*포지션 부모 설정*/
+    margin: 0 auto;
+}
+
+/*02. 라벨 위치 정하기  */
+.kry_choice .choice_label{
+    color: rgb(255, 255, 255);
+    position: absolute; /*포지션 부모 하위 자식*/
+    bottom: 20px; /*포지션 위치 설정*/
+    left: calc(626px - 343px ); /*포지션 위치 설정 2*/  
+}
+
+
+/*라벨 간격 10씩 띄움 */
+.kry_choice .choice_label label{
+    margin: 0 10px;
+}
+
+/* 시트파일 이미지 크기 설정 */
+.kry_choice .choice_img div img{
+    width: 626px; height: 555px;
+}
+
+
+
+.event02{
+    margin-top: 100px;
+}
+
+/* ------- 푸터시작 */
+.footer{
+    width: 100%; height: 500px;
+    background-color: #e7ccff;
+    border-radius: 28px 28px 0 0;
+    margin-top: 100px;
+    padding-top: 40px;
+    color: #707070;
+    position: relative;
+}
+
+
+.footer .ft_box{
+    margin-top: 30px;
+    width: 1264px; height: 210px;
+    border-radius: 28px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+    position: relative;
+}
+.ft_box .ft_box1{
+    box-sizing: border-box;
+    float: left;
+    border-right: 2.5px solid #b595c1;
+    width: 500px;
+    height: 160px;
+    margin-top: 25px;
+    font-size: 17px;
+    
+}
+.ft_box1{
+    padding-left: 38px;
+}
+.ft_box1 h1{
+    font-family: 'Fugaz One', cursive;
+    color: #6E268F;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+.ft_box1 .box2{
+    margin-top: 5px;
+}
+.ft_box1 .box2 img:first-child{
+    margin-left: -2px;
+}
+.ft_box1 .box2 img{
+    width: 60px; height: 60px;
+}
+.ft_box1 .box2 a{
+    float: left;
+    font-size: 13px;
+    width: 110px; height: 85px;
+}
+.ft_box1 .box2 p{
+    color: #707070;
+    margin-left: -3px;
+}
+
+.ft_box .ft_box2{
+    float: right;
+    width: 700px;
+    height: 156px;
+    margin-top: 28px;
+    overflow: hidden;
+}
+.ft_box2 ul li{
+    float: left;
+    font-size: 16px;
+    margin-right: 2px;
+}
+.ft_box2 p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.ft_box .top_btn{
+    display: block;
+    width: 70px; height: 70px;
+    border-radius: 15px;
+    background-color: #5D2E87;
+    color: white;
+    float: right;
+    text-align: center;
+    line-height: 70px;
+    font-size: 22px;
+    position: absolute;
+    right: 30px;
+    bottom: 28px;
+    margin-top: 40px;
+    /* 구글링 박스에 그림자효과주는
+    박스 새도우 3번째 입력란은
+    그림자 블러강도 설정임. */
+    box-shadow: 2px 2px 10px rgb(180, 165, 187);
+}
+.top_btn i{
+    font-size: 15px;
+    margin: 0; padding: 0;
+    position: absolute;
+    top: 9px;
+    left: 28.5px;
+    
+}
+/* 탑버튼 끝 */
+
+/*  */
+.ft_box_btm{
+    margin: 35px auto;
+    width: 1264px; height: 88px;
+    background-color: white;
+    border-radius: 32px;
+    color: #707070;
+}
+
+.ft_box_btms:first-child{
+    padding-left: 20px;
+}
+.ft_box_btms .logo{
+    width: 56px; height: 50px;
+    float: left;
+    margin-right: 7px;
+}
+.ft_box_btms p{
+    font-size: 11px;
+    font-weight: bold;
+    margin: 5.5px 3px;
+    
+}
+.ft_box_btm2 p{
+    margin-top: 5px;
+}
+.ft_box_btm .ft_box_btms{
+    float: left;
+    width: 330px; height: 50px;
+    margin: 20px 0;
+}
+
+.ft_sns_box{
+    float: right;
+    margin: 14px 0;
+    margin-right: 24px;
+    width: 362px; height: 65px;
+}
+.ft_sns_box img{
+    width: 60px; height: 60px;
+    margin-right: 5px;
+}
+/* 푸터2번째칸 sns박스 끝  */
+
+.ft_tmi_box{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%; height: 180px;
+    background-color: #e9f6ff;
+    text-align: center;
+    font-size: 14px;
+    color: #848080;
+}
+.ft_tmi_box .ft_tmi{
+    margin: 0 auto;
+    width: 1264px;
+    display: inline-block;
+}
+.ft_tmi p{
+    padding-top: 20px;
+    text-align: center;
+}
